@@ -10,7 +10,6 @@
     <description>C# SDK não-oficial do tabnews.com.br</description>
     <copyright>Copyright © 2024</copyright>
     <dependencies>
-      <dependency id="Microsoft.Bcl.AsyncInterfaces" version="8.0.0" />
       <dependency id="Newtonsoft.Json" version="13.0.3" />
       <dependency id="RestSharp" version="110.2.0" />
       <dependency id="System.Numerics.Vectors" version="4.5.0" />
