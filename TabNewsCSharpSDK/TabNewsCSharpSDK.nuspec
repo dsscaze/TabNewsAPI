@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
+  <metadata>
+    <id>TabNewsCSharpSDK</id>
+    <version>1.0.0</version>
+    <title>TabNewsCSharpSDK</title>
+    <authors>Programador Raiz</authors>
+    <owners>programadorraiz</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>C# SDK não-oficial do tabnews.com.br</description>
+    <copyright>Copyright © 2024</copyright>
+    <dependencies>
+      <dependency id="Microsoft.Bcl.AsyncInterfaces" version="8.0.0" />
+      <dependency id="Newtonsoft.Json" version="13.0.3" />
+      <dependency id="RestSharp" version="110.2.0" />
+      <dependency id="System.Numerics.Vectors" version="4.5.0" />
+      <dependency id="System.Runtime.CompilerServices.Unsafe" version="6.0.0" />
+      <dependency id="System.Text.Json" version="8.0.3" />
+    </dependencies>
+  </metadata>
+</package>

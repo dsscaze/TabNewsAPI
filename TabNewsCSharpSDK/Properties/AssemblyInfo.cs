@@ -6,11 +6,11 @@ using System.Runtime.InteropServices;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 [assembly: AssemblyTitle("TabNewsCSharpSDK")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyDescription("C# SDK não-oficial do tabnews.com.br")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
+[assembly: AssemblyCompany("Programador Raiz")]
 [assembly: AssemblyProduct("TabNewsCSharpSDK")]
-[assembly: AssemblyCopyright("Copyright ©  2024")]
+[assembly: AssemblyCopyright("Copyright © 2024")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
