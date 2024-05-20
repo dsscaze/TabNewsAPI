@@ -3,6 +3,9 @@
 ################################################################################
 
 /.vs/
-TabNewsCSharpSDK/bin
-TabNewsCSharpSDK/obj
+TabNewsCSharpSDK/bin/
+TabNewsCSharpSDK/obj/
+TabNewsAPIExamples/bin/
+TabNewsAPIExamples/obj/
 *.nupkg
+*.user
