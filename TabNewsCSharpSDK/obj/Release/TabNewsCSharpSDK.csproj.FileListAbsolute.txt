@@ -28,4 +28,3 @@ C:\Users\dssca\Documents\GitHub\TabNewsAPI\TabNewsCSharpSDK\obj\Release\TabNewsC
 C:\Users\dssca\Documents\GitHub\TabNewsAPI\TabNewsCSharpSDK\obj\Release\TabNewsCSharpSDK.dll
 C:\Users\dssca\Documents\GitHub\TabNewsAPI\TabNewsCSharpSDK\obj\Release\TabNewsCSharpSDK.pdb
 C:\Users\dssca\Documents\GitHub\TabNewsAPI\TabNewsCSharpSDK\bin\Release\TabNewsCSharpSDK.nuspec
-C:\Users\dssca\Documents\GitHub\TabNewsAPI\TabNewsCSharpSDK\obj\Release\TabNewsCSharpSDK.csprojAssemblyReference.cache
