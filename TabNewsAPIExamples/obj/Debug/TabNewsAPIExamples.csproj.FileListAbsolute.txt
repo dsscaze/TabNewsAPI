@@ -27,8 +27,8 @@ C:\Users\dssca\Documents\GitHub\TabNewsAPI\TabNewsAPIExamples\bin\Debug\System.T
 C:\Users\dssca\Documents\GitHub\TabNewsAPI\TabNewsAPIExamples\bin\Debug\System.Numerics.Vectors.xml
 C:\Users\dssca\Documents\GitHub\TabNewsAPI\TabNewsAPIExamples\bin\Debug\System.Buffers.xml
 C:\Users\dssca\Documents\GitHub\TabNewsAPI\TabNewsAPIExamples\obj\Debug\TabNewsAPIExamples.csprojAssemblyReference.cache
-C:\Users\dssca\Documents\GitHub\TabNewsAPI\TabNewsAPIExamples\obj\Debug\TabNewsAPIExamples.exe.config
 C:\Users\dssca\Documents\GitHub\TabNewsAPI\TabNewsAPIExamples\obj\Debug\TabNewsAPIExamples.csproj.CoreCompileInputs.cache
 C:\Users\dssca\Documents\GitHub\TabNewsAPI\TabNewsAPIExamples\obj\Debug\TabNewsAPIExamples.csproj.CopyComplete
 C:\Users\dssca\Documents\GitHub\TabNewsAPI\TabNewsAPIExamples\obj\Debug\TabNewsAPIExamples.exe
 C:\Users\dssca\Documents\GitHub\TabNewsAPI\TabNewsAPIExamples\obj\Debug\TabNewsAPIExamples.pdb
+C:\Users\dssca\Documents\GitHub\TabNewsAPI\TabNewsAPIExamples\bin\Debug\TabNewsCSharpSDK.nuspec

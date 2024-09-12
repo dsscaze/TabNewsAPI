@@ -12,7 +12,7 @@ namespace TabNewsAPIExamples
     {
         static void Main(string[] args)
         {
-            TabNewsUserSession userSession = TabNewsApi.LoginUser("canalprogramadorraiz@gmail.com", "");
+            TabNewsUserSession userSession = TabNewsApi.LoginUser("canalprogramadorraiz@gmail.com", "#X6r3#79aMaNYu#");
 
             Console.WriteLine("userSession.token: " + Environment.NewLine + userSession.token);
             Console.ReadKey();
@@ -30,8 +30,8 @@ namespace TabNewsAPIExamples
             Console.ReadKey();
             Console.Clear();
 
-            List<TabNewsContent> contents = TabNewsApi.GetContents("programaorraiz", 10, 1);
-            foreach (var c in contents)
+            TabNewsContentResponse contentResponse = TabNewsApi.GetContents("programadorraiz", 10, 1);
+            foreach (var c in contentResponse.Contents)
             {
                 Console.WriteLine("title: " + c.title + Environment.NewLine + Environment.NewLine);
                 Console.WriteLine(c.body);

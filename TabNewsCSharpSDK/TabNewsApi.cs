@@ -3,8 +3,6 @@ using RestSharp;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using TabNewsCSharpSDK.Entities;
 
 namespace TabNewsCSharpSDK
@@ -84,9 +82,14 @@ namespace TabNewsCSharpSDK
             return tabNewContent;
         }
 
-        public static List<TabNewsContent> GetContents(string owner_username, int per_page, int page, string strategy = "new")
+        public static TabNewsContentResponse GetContents(string owner_username, int per_page, int page, string strategy = "new")
         {
-            List<TabNewsContent> tabNewContents = new List<TabNewsContent>();
+            TabNewsContentResponse tabNewsResponse = new TabNewsContentResponse();
+            tabNewsResponse.Page = page;
+            tabNewsResponse.PageSize = per_page;
+
+            List<TabNewsContent> tabNewsContents = new List<TabNewsContent>();
+
             var options = new RestClientOptions(BaseUrlApi)
             {
                 MaxTimeout = -1,
@@ -98,14 +101,22 @@ namespace TabNewsCSharpSDK
 
             if (response.IsSuccessful)
             {
-                tabNewContents = JsonConvert.DeserializeObject<List<TabNewsContent>>(response.Content);
+                object x_pagination_total_rows = response.Headers
+                        .Where(x => x.get_Name() == "x-pagination-total-rows")
+                        .FirstOrDefault()
+                        .get_Value();
+
+                tabNewsResponse.TotalPosts = Convert.ToInt32(x_pagination_total_rows);
+
+                tabNewsContents = JsonConvert.DeserializeObject<List<TabNewsContent>>(response.Content);
+                tabNewsResponse.Contents = tabNewsContents;
             }
             else
             {
                 throw new TabNewsException(response.Content);
             }
 
-            return tabNewContents;
+            return tabNewsResponse;
         }
     }
 }

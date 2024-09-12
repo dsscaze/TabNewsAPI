@@ -6,6 +6,19 @@ using System.Threading.Tasks;
 
 namespace TabNewsCSharpSDK.Entities
 {
+    public class TabNewsContentResponse
+    {
+        public TabNewsContentResponse()
+        {
+
+        }
+
+        public int TotalPosts { get; set; }
+        public int Page { get; set; }
+        public int PageSize { get; set; }
+        public List<TabNewsContent> Contents { get; set; }
+    }
+
     // gerado em https://json2csharp.com/
     public class TabNewsContent
     {
