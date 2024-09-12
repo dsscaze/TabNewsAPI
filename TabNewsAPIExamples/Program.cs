@@ -12,7 +12,7 @@ namespace TabNewsAPIExamples
     {
         static void Main(string[] args)
         {
-            TabNewsUserSession userSession = TabNewsApi.LoginUser("canalprogramadorraiz@gmail.com", "#X6r3#79aMaNYu#");
+            TabNewsUserSession userSession = TabNewsApi.LoginUser("canalprogramadorraiz@gmail.com", "");
 
             Console.WriteLine("userSession.token: " + Environment.NewLine + userSession.token);
             Console.ReadKey();
