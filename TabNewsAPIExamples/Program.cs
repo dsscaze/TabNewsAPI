@@ -39,6 +39,16 @@ namespace TabNewsAPIExamples
                 Console.Clear();
             }
 
+            List<TabNewsContent> contents = TabNewsApi.Get10LastedPosts("programadorraiz", 10, 1);
+            foreach (var c in contents)
+            {
+                Console.WriteLine("title: " + c.title + Environment.NewLine + Environment.NewLine);
+                Console.WriteLine(c.body);
+                Console.ReadKey();
+                Console.Clear();
+            }
+
+
             Console.WriteLine("saindo...");
             Console.ReadKey();
             Console.Clear();

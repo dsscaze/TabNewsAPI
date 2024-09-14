@@ -97,6 +97,7 @@
     </Content>
     <None Include="TabNewsCSharpSDK.1.0.1.nupkg" />
     <None Include="TabNewsCSharpSDK.1.0.2.nupkg" />
+    <None Include="TabNewsCSharpSDK.1.0.3.nupkg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
