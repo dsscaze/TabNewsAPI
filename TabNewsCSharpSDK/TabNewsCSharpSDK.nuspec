@@ -2,7 +2,7 @@
 <package >
   <metadata>
     <id>TabNewsCSharpSDK</id>
-    <version>1.0.1</version>
+    <version>1.0.2</version>
     <title>TabNewsCSharpSDK</title>
     <authors>Programador Raiz</authors>
     <owners>programadorraiz</owners>
@@ -11,7 +11,7 @@
     <!-- <icon>icon.png</icon> -->
     <projectUrl>https://github.com/dsscaze/TabNewsAPI</projectUrl>
     <description>C# SDK não-oficial do tabnews.com.br</description>
-    <releaseNotes>Versão inicial</releaseNotes>
+    <releaseNotes>[breaking change] - Mudanças nos método GetContent para retornar informações sobre a paginação</releaseNotes>
     <copyright>Copyright © 2024</copyright>
     <tags>TabNews</tags>
   </metadata>
