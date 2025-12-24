@@ -1,11 +1,80 @@
 ﻿################################################################################
-# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+# Padrão de gitignore para projetos C# .NET
 ################################################################################
 
-/.vs/
-TabNewsCSharpSDK/bin/
-TabNewsCSharpSDK/obj/
-TabNewsAPIExamples/bin/
-TabNewsAPIExamples/obj/
-*.nupkg
+## Visual Studio / Visual Studio Code
+.vs/
+.vscode/
+*.sln.user
 *.user
+*.userosscache
+*.suo
+*.userprefs
+.idea/
+*.swp
+*.swo
+
+## Diretórios de build e compilação
+*/bin/
+*/obj/
+*/out/
+*.o
+*.a
+*.lib
+*.exp
+*.dll
+*.so
+*.dylib
+
+## Arquivos de cache e temporários
+.cache/
+.temp/
+*.cache
+*.tmp
+*.temp
+Thumbs.db
+.DS_Store
+
+## Pacotes NuGet
+*.nupkg
+*.snupkg
+*.nuspec.backup
+packages/
+.nuget/
+
+## Arquivos de configuração local
+appsettings.local.json
+appsettings.*.json
+!appsettings.json
+launchSettings.json
+
+## Testes e cobertura
+coverage/
+TestResults/
+*.trx
+*.coverage
+*.opencover.xml
+*.coveragexml
+
+## Documentação gerada
+docs/_build/
+docs/.doctrees/
+
+## Node (se usado em projetos híbridos)
+node_modules/
+npm-debug.log
+yarn-error.log
+
+## Logs
+*.log
+logs/
+
+## Arquivos de sistema operacional
+.DS_Store
+Thumbs.db
+
+## Arquivos de publicação
+PublishProfiles/
+.pubxml
+*.pubxml
+*.pubxml.user

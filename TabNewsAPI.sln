@@ -7,20 +7,54 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TabNewsCSharpSDK", "TabNews
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TabNewsAPIExamples", "TabNewsAPIExamples\TabNewsAPIExamples.csproj", "{373B9107-EDB6-4B46-A65C-18AD336C40DD}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TabNewsClientCore", "TabNewsClientCore\TabNewsClientCore.csproj", "{6C9DA7A6-9D02-430E-A702-FD75E96FCD8F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
 		Release|Any CPU = Release|Any CPU
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{E9F546D0-39AA-4943-A17B-388E4B2178DB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{E9F546D0-39AA-4943-A17B-388E4B2178DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E9F546D0-39AA-4943-A17B-388E4B2178DB}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{E9F546D0-39AA-4943-A17B-388E4B2178DB}.Debug|x64.Build.0 = Debug|Any CPU
+		{E9F546D0-39AA-4943-A17B-388E4B2178DB}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{E9F546D0-39AA-4943-A17B-388E4B2178DB}.Debug|x86.Build.0 = Debug|Any CPU
 		{E9F546D0-39AA-4943-A17B-388E4B2178DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E9F546D0-39AA-4943-A17B-388E4B2178DB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E9F546D0-39AA-4943-A17B-388E4B2178DB}.Release|x64.ActiveCfg = Release|Any CPU
+		{E9F546D0-39AA-4943-A17B-388E4B2178DB}.Release|x64.Build.0 = Release|Any CPU
+		{E9F546D0-39AA-4943-A17B-388E4B2178DB}.Release|x86.ActiveCfg = Release|Any CPU
+		{E9F546D0-39AA-4943-A17B-388E4B2178DB}.Release|x86.Build.0 = Release|Any CPU
 		{373B9107-EDB6-4B46-A65C-18AD336C40DD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{373B9107-EDB6-4B46-A65C-18AD336C40DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{373B9107-EDB6-4B46-A65C-18AD336C40DD}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{373B9107-EDB6-4B46-A65C-18AD336C40DD}.Debug|x64.Build.0 = Debug|Any CPU
+		{373B9107-EDB6-4B46-A65C-18AD336C40DD}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{373B9107-EDB6-4B46-A65C-18AD336C40DD}.Debug|x86.Build.0 = Debug|Any CPU
 		{373B9107-EDB6-4B46-A65C-18AD336C40DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{373B9107-EDB6-4B46-A65C-18AD336C40DD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{373B9107-EDB6-4B46-A65C-18AD336C40DD}.Release|x64.ActiveCfg = Release|Any CPU
+		{373B9107-EDB6-4B46-A65C-18AD336C40DD}.Release|x64.Build.0 = Release|Any CPU
+		{373B9107-EDB6-4B46-A65C-18AD336C40DD}.Release|x86.ActiveCfg = Release|Any CPU
+		{373B9107-EDB6-4B46-A65C-18AD336C40DD}.Release|x86.Build.0 = Release|Any CPU
+		{6C9DA7A6-9D02-430E-A702-FD75E96FCD8F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6C9DA7A6-9D02-430E-A702-FD75E96FCD8F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6C9DA7A6-9D02-430E-A702-FD75E96FCD8F}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{6C9DA7A6-9D02-430E-A702-FD75E96FCD8F}.Debug|x64.Build.0 = Debug|Any CPU
+		{6C9DA7A6-9D02-430E-A702-FD75E96FCD8F}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{6C9DA7A6-9D02-430E-A702-FD75E96FCD8F}.Debug|x86.Build.0 = Debug|Any CPU
+		{6C9DA7A6-9D02-430E-A702-FD75E96FCD8F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6C9DA7A6-9D02-430E-A702-FD75E96FCD8F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6C9DA7A6-9D02-430E-A702-FD75E96FCD8F}.Release|x64.ActiveCfg = Release|Any CPU
+		{6C9DA7A6-9D02-430E-A702-FD75E96FCD8F}.Release|x64.Build.0 = Release|Any CPU
+		{6C9DA7A6-9D02-430E-A702-FD75E96FCD8F}.Release|x86.ActiveCfg = Release|Any CPU
+		{6C9DA7A6-9D02-430E-A702-FD75E96FCD8F}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
