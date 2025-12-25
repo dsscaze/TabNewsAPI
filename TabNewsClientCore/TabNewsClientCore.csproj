@@ -17,10 +17,15 @@
     <PackageTags>TabNews;SDK;Client;.NET8</PackageTags>
     <PackageReleaseNotes>Correção crítica: Adicionado mapeamento correto JSON para deserialização das entidades (snake_case para PascalCase)</PackageReleaseNotes>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
     <RepositoryType>git</RepositoryType>
     <Owners>dsscaze</Owners>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
   </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="README.md" Pack="true" PackagePath="\" />
+  </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="Newtonsoft.Json" Version="13.0.4" />
