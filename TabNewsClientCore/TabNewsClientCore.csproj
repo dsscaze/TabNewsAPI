@@ -8,14 +8,14 @@
     
     <!-- Metadados NuGet -->
     <PackageId>TabNewsClientCore</PackageId>
-    <Version>1.0.0</Version>
+    <Version>1.0.2</Version>
     <Title>TabNewsClientCore</Title>
     <Authors>Daniel Caze</Authors>
     <PackageProjectUrl>https://github.com/dsscaze/TabNewsAPI</PackageProjectUrl>
     <RepositoryUrl>https://github.com/dsscaze/TabNewsAPI</RepositoryUrl>
     <Description>C# SDK não-oficial do tabnews.com.br - Versão .NET 8.0</Description>
     <PackageTags>TabNews;SDK;Client;.NET8</PackageTags>
-    <PackageReleaseNotes>Versão inicial para .NET 8.0. Migração do projeto TabNewsCSharpSDK para .NET Core.</PackageReleaseNotes>
+    <PackageReleaseNotes>Correção crítica: Adicionado mapeamento correto JSON para deserialização das entidades (snake_case para PascalCase)</PackageReleaseNotes>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <RepositoryType>git</RepositoryType>
     <Owners>dsscaze</Owners>

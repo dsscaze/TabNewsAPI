@@ -12,7 +12,7 @@
     <projectUrl>https://github.com/dsscaze/TabNewsAPI</projectUrl>
     <description>C# SDK não-oficial do tabnews.com.br</description>
     <releaseNotes>Criação do método Get10LastedPosts, que retorna os últimos 10 posts de um usuário. Considera apenas posts, desconsidera comentários</releaseNotes>
-    <copyright>Copyright © 2024</copyright>
+    <copyright>Copyright © 2025</copyright>
     <tags>TabNews</tags>
   </metadata>
 </package>
