@@ -105,7 +105,7 @@ dotnet nuget push TabNewsClientCore.2.0.0.nupkg --api-key <API_KEY> --source htt
 
 ```bash
 cd c:\Users\danielcaze\source\repos\TabNewsAPI\TabNewsClientCore\bin\Release
-dotnet nuget push TabNewsClientCore.2.0.0.nupkg --api-key oy2abc123def456ghi789jkl123mno456pqr --source https://api.nuget.org/v3/index.json
+dotnet nuget push TabNewsClientCore.2.0.0.nupkg --api-key <SUA_CHAVE_AQUI> --source https://api.nuget.org/v3/index.json
 ```
 
 ### 5.3 Resposta Esperada

@@ -114,7 +114,8 @@ public static class TabNewsApi
         
         if (response.IsSuccessful)
         {
-            var headerValue = response.Headers
+            var headers = response.Headers ?? [];
+            var headerValue = headers
                 .FirstOrDefault(x => x.Name == "x-pagination-total-rows");
             
             if (headerValue?.Value is not null)
@@ -146,7 +147,7 @@ public static class TabNewsApi
         bool searchNewContent = true;
         var tabNewsContents = new List<TabNewsContent>();
 
-        while (searchNewContent)
+        while (searchNewContent && tabNewsContents.Count < 10)
         {
             RestResponse response = GetContentBase(ownerUsername, perPage, page);
 
@@ -155,10 +156,16 @@ public static class TabNewsApi
                 var contents = JsonConvert.DeserializeObject<List<TabNewsContent>>(response.Content ?? "");
                 if (contents != null)
                 {
-                    tabNewsContents.AddRange(contents.Where(p => p.ParentId == null).ToList());
+                    // Filtrar apenas posts (ParentId == null) e excluir conteúdo deletado
+                    var posts = contents
+                        .Where(p => string.IsNullOrEmpty(p.ParentId) && p.DeletedAt == null)
+                        .ToList();
+                    
+                    tabNewsContents.AddRange(posts);
                 }
 
-                var headerValue = response.Headers
+                var headers = response.Headers ?? [];
+                var headerValue = headers
                     .FirstOrDefault(x => x.Name == "x-pagination-total-rows");
 
                 if (headerValue?.Value is not null)
@@ -170,7 +177,6 @@ public static class TabNewsApi
                     if (tabNewsContents.Count >= 10)
                     {
                         searchNewContent = false;
-                        tabNewsContents = tabNewsContents.Take(10).ToList();
                     }
                     else if (totalPages > page)
                     {
@@ -192,7 +198,8 @@ public static class TabNewsApi
             }
         }
 
-        return tabNewsContents;
+        // Retornar apenas os primeiros 10 posts
+        return tabNewsContents.Take(10).ToList();
     }
 
     /// <summary>

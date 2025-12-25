@@ -4,12 +4,13 @@
     <TargetFramework>net8.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+    <NoWarn>$(NoWarn);CS1591</NoWarn>
     
     <!-- Metadados NuGet -->
     <PackageId>TabNewsClientCore</PackageId>
-    <Version>2.0.0</Version>
+    <Version>1.0.0</Version>
     <Title>TabNewsClientCore</Title>
-    <Authors>Programador Raiz</Authors>
+    <Authors>Daniel Caze</Authors>
     <PackageProjectUrl>https://github.com/dsscaze/TabNewsAPI</PackageProjectUrl>
     <RepositoryUrl>https://github.com/dsscaze/TabNewsAPI</RepositoryUrl>
     <Description>C# SDK não-oficial do tabnews.com.br - Versão .NET 8.0</Description>
@@ -17,7 +18,7 @@
     <PackageReleaseNotes>Versão inicial para .NET 8.0. Migração do projeto TabNewsCSharpSDK para .NET Core.</PackageReleaseNotes>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <RepositoryType>git</RepositoryType>
-    <Owners>programadorraiz</Owners>
+    <Owners>dsscaze</Owners>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
   </PropertyGroup>
 
