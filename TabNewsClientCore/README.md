@@ -18,19 +18,12 @@ dotnet add package TabNewsClientCore
 
 ## 🚀 Uso Rápido
 
-### Autenticação (Login)
+### Obter Informações do Usuário
 ```csharp
 using TabNewsClientCore;
 
-// Fazer login
-var session = TabNewsApi.LoginUser("seu_email@example.com", "sua_senha");
-Console.WriteLine($"Token: {session.Token}");
-```
-
-### Obter Informações do Usuário
-```csharp
-// Obter dados do usuário autenticado
-var user = TabNewsApi.GetUser(session.Id);
+// Obter dados do usuário
+var user = TabNewsApi.GetUser("nome_usuario");
 Console.WriteLine($"Usuário: {user.Username}");
 Console.WriteLine($"TabCoins: {user.TabCoins}");
 ```
@@ -67,26 +60,12 @@ Console.WriteLine($"Posts obtidos: {posts.Count}");
 Classe estática que contém todos os métodos para interagir com a API.
 
 #### Métodos
-- `LoginUser(email, password)` - Autentica um usuário
-- `GetUser(sessionId)` - Obtém informações do usuário autenticado
+- `GetUser(ownerUsername)` - Obtém informações de um usuário
 - `GetContent(ownerUsername, slug)` - Obtém um conteúdo específico
 - `GetContents(ownerUsername, perPage, page, strategy)` - Lista conteúdos com paginação
 - `Get10LastedPosts(ownerUsername, perPage, page)` - Obtém os últimos 10 posts
 
 ### Entities
-
-#### TabNewsUserSession
-Representa uma sessão de usuário após login.
-```csharp
-public class TabNewsUserSession
-{
-    public string? Id { get; set; }
-    public string? Token { get; set; }
-    public DateTime ExpiresAt { get; set; }
-    public DateTime CreatedAt { get; set; }
-    public DateTime UpdatedAt { get; set; }
-}
-```
 
 #### TabNewsUser
 Representa as informações de um usuário.
@@ -185,16 +164,12 @@ A API pública é praticamente idêntica ao SDK antigo, com as seguintes mudanç
 using TabNewsClientCore;
 using TabNewsClientCore.Entities;
 
-// 1. Autenticação
-var session = TabNewsApi.LoginUser("user@example.com", "password");
-Console.WriteLine($"Login bem-sucedido. Token: {session.Token}");
-
-// 2. Obter informações do usuário
-var user = TabNewsApi.GetUser(session.Id);
+// 1. Obter informações do usuário
+var user = TabNewsApi.GetUser("nome_usuario");
 Console.WriteLine($"Usuário: {user.Username}");
 Console.WriteLine($"TabCoins: {user.TabCoins}");
 
-// 3. Listar artigos do usuário
+// 2. Listar artigos do usuário
 var posts = TabNewsApi.Get10LastedPosts(user.Username);
 Console.WriteLine($"Últimos {posts.Count} posts:");
 foreach (var post in posts)
@@ -202,7 +177,7 @@ foreach (var post in posts)
     Console.WriteLine($"- {post.Title} ({post.TabCoins} tabcoins)");
 }
 
-// 4. Obter um artigo específico
+// 3. Obter um artigo específico
 var article = TabNewsApi.GetContent(user.Username, posts[0].Slug);
 Console.WriteLine($"Artigo: {article.Body}");
 ```
@@ -212,11 +187,11 @@ Console.WriteLine($"Artigo: {article.Body}");
 ```csharp
 try
 {
-    var session = TabNewsApi.LoginUser(email, password);
+    var user = TabNewsApi.GetUser("nome_usuario");
 }
 catch (TabNewsException ex)
 {
-    Console.WriteLine($"Erro ao fazer login: {ex.Message}");
+    Console.WriteLine($"Erro ao obter usuário: {ex.Message}");
 }
 ```
 
