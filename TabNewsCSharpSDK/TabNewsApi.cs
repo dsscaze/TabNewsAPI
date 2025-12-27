@@ -16,7 +16,7 @@ namespace TabNewsCSharpSDK
             TabNewsUserSession userSession = new TabNewsUserSession();
             var options = new RestClientOptions(BaseUrlApi)
             {
-                MaxTimeout = -1,
+                Timeout = TimeSpan.FromMilliseconds(-1),
                 FollowRedirects = false
             };
 
@@ -36,18 +36,17 @@ namespace TabNewsCSharpSDK
             return userSession;
         }
 
-        public static TabNewsUser GetUser(string sessionid)
+        public static TabNewsUser GetUser(string owner_username)
         {
             TabNewsUser tabNewUser = new TabNewsUser();
             var options = new RestClientOptions(BaseUrlApi)
             {
-                MaxTimeout = -1,
+                Timeout = TimeSpan.FromMilliseconds(-1),
                 FollowRedirects = false
             };
 
             var client = new RestClient(options);
-            var request = new RestRequest("user", Method.Get);
-            request.AddHeader("Cookie", "session_id=" + sessionid);
+            var request = new RestRequest("users/" + owner_username, Method.Get);
 
             RestResponse response = client.Execute(request);
 
@@ -66,7 +65,7 @@ namespace TabNewsCSharpSDK
             TabNewsContent tabNewContent = new TabNewsContent();
             var options = new RestClientOptions(BaseUrlApi)
             {
-                MaxTimeout = -1,
+                Timeout = TimeSpan.FromMilliseconds(-1),
             };
 
             var client = new RestClient(options);
@@ -94,9 +93,8 @@ namespace TabNewsCSharpSDK
             if (response.IsSuccessful)
             {
                 object x_pagination_total_rows = response.Headers
-                        .Where(x => x.get_Name() == "x-pagination-total-rows")
-                        .FirstOrDefault()
-                        .get_Value();
+                        .FirstOrDefault(x => x.Name == "x-pagination-total-rows")
+                        ?.Value;
 
                 tabNewsResponse.TotalPosts = Convert.ToInt32(x_pagination_total_rows);
 
@@ -126,9 +124,8 @@ namespace TabNewsCSharpSDK
                     tabNewsContents.AddRange(_contents.Where(p => p.parent_id == null).ToList());
 
                     object x_pagination_total_rows = response.Headers
-                            .Where(x => x.get_Name() == "x-pagination-total-rows")
-                            .FirstOrDefault()
-                            .get_Value();
+                            .FirstOrDefault(x => x.Name == "x-pagination-total-rows")
+                            ?.Value;
 
                     int TotalPosts = Convert.ToInt32(x_pagination_total_rows);
                     decimal quo = TotalPosts / (decimal)per_page;
@@ -156,7 +153,7 @@ namespace TabNewsCSharpSDK
         {
             var options = new RestClientOptions(BaseUrlApi)
             {
-                MaxTimeout = -1,
+                Timeout = TimeSpan.FromMilliseconds(-1),
             };
 
             var client = new RestClient(options);

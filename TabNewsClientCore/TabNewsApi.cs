@@ -53,7 +53,7 @@ public static class TabNewsApi
         };
 
         var client = new RestClient(options);
-        var request = new RestRequest("user", Method.Get);
+        var request = new RestRequest("users/" + ownerUsername, Method.Get);
 
         RestResponse response = client.Execute(request);
 
