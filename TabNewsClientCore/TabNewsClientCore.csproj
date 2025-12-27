@@ -1,3 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <TargetFramework>net8.0</TargetFramework>
@@ -6,7 +7,7 @@
     <NoWarn>$(NoWarn);CS1591</NoWarn>
     <!-- Metadados NuGet -->
     <PackageId>TabNewsClientCore</PackageId>
-    <Version>1.0.3</Version>
+    <Version>1.0.8</Version>
     <Title>TabNewsClientCore</Title>
     <Authors>Daniel Caze</Authors>
     <PackageProjectUrl>https://github.com/dsscaze/TabNewsAPI</PackageProjectUrl>

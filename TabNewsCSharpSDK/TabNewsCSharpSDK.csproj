@@ -14,6 +14,19 @@
     <Deterministic>true</Deterministic>
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
+    <!-- Metadados NuGet para dotnet pack -->
+    <PackageId>TabNewsCSharpSDK</PackageId>
+    <Version>1.0.7</Version>
+    <Authors>Daniel Caze</Authors>
+    <Owners>dsscaze</Owners>
+    <PackageProjectUrl>https://github.com/dsscaze/TabNewsAPI</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/dsscaze/TabNewsAPI</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <Description>C# SDK não-oficial do tabnews.com.br - Versão .NET Framework 4.7.2</Description>
+    <PackageTags>TabNews SDK Client .NETFramework</PackageTags>
+    <PackageReleaseNotes>Correção crítica: Adicionado mapeamento correto JSON para deserialização das entidades (snake_case para PascalCase)</PackageReleaseNotes>
+    <Copyright>Copyright © 2025</Copyright>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>

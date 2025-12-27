@@ -47,13 +47,9 @@ public static class TabNewsApi
     /// <exception cref="TabNewsException">Lançado quando a requisição falha</exception>
     public static TabNewsUser GetUser(string ownerUsername)
     {
-        var options = new RestClientOptions(BaseUrlApi)
-        {
-            FollowRedirects = false
-        };
-
+        var options = new RestClientOptions(BaseUrlApi);
         var client = new RestClient(options);
-        var request = new RestRequest("users/" + ownerUsername, Method.Get);
+        var request = new RestRequest($"users/{ownerUsername}", Method.Get);
 
         RestResponse response = client.Execute(request);
 

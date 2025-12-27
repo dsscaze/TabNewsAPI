@@ -1,18 +1,18 @@
-<?xml version="1.0" encoding="utf-8"?>
-<package >
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package>
   <metadata>
     <id>TabNewsCSharpSDK</id>
-    <version>1.0.3</version>
+    <version>1.0.6</version>
     <title>TabNewsCSharpSDK</title>
-    <authors>Programador Raiz</authors>
-    <owners>programadorraiz</owners>
+    <authors>Daniel Caze</authors>
+    <owners>dsscaze</owners>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <license type="expression">MIT</license>
-    <!-- <icon>icon.png</icon> -->
     <projectUrl>https://github.com/dsscaze/TabNewsAPI</projectUrl>
-    <description>C# SDK não-oficial do tabnews.com.br</description>
-    <releaseNotes>Criação do método Get10LastedPosts, que retorna os últimos 10 posts de um usuário. Considera apenas posts, desconsidera comentários</releaseNotes>
+    <repository type="git" url="https://github.com/dsscaze/TabNewsAPI" />
+    <description>C# SDK não-oficial do tabnews.com.br - Versão .NET Framework 4.7.2</description>
+    <releaseNotes>Correção crítica: Adicionado mapeamento correto JSON para deserialização das entidades (snake_case para PascalCase)</releaseNotes>
     <copyright>Copyright © 2025</copyright>
-    <tags>TabNews</tags>
+    <tags>TabNews SDK Client .NETFramework</tags>
   </metadata>
 </package>
