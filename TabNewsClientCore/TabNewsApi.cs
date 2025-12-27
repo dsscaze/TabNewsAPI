@@ -42,10 +42,10 @@ public static class TabNewsApi
     /// <summary>
     /// Obtém informações do usuário autenticado
     /// </summary>
-    /// <param name="sessionId">ID da sessão do usuário</param>
+    /// <param name="ownerUsername">Nome de usuário do proprietário</param>
     /// <returns>Informações do usuário</returns>
     /// <exception cref="TabNewsException">Lançado quando a requisição falha</exception>
-    public static TabNewsUser GetUser(string sessionId)
+    public static TabNewsUser GetUser(string ownerUsername)
     {
         var options = new RestClientOptions(BaseUrlApi)
         {
@@ -54,7 +54,6 @@ public static class TabNewsApi
 
         var client = new RestClient(options);
         var request = new RestRequest("user", Method.Get);
-        request.AddHeader("Cookie", "session_id=" + sessionId);
 
         RestResponse response = client.Execute(request);
 

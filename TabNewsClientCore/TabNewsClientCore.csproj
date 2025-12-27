@@ -1,14 +1,12 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
-
+<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <TargetFramework>net8.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
     <NoWarn>$(NoWarn);CS1591</NoWarn>
-    
     <!-- Metadados NuGet -->
     <PackageId>TabNewsClientCore</PackageId>
-    <Version>1.0.2</Version>
+    <Version>1.0.3</Version>
     <Title>TabNewsClientCore</Title>
     <Authors>Daniel Caze</Authors>
     <PackageProjectUrl>https://github.com/dsscaze/TabNewsAPI</PackageProjectUrl>
@@ -22,14 +20,11 @@
     <Owners>dsscaze</Owners>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
   </PropertyGroup>
-
   <ItemGroup>
     <None Include="README.md" Pack="true" PackagePath="\" />
   </ItemGroup>
-
   <ItemGroup>
     <PackageReference Include="Newtonsoft.Json" Version="13.0.4" />
     <PackageReference Include="RestSharp" Version="113.0.0" />
   </ItemGroup>
-
 </Project>

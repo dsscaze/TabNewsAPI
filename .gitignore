@@ -42,6 +42,9 @@ Thumbs.db
 packages/
 .nuget/
 
+## Chaves e segredos
+nugetApiKey.json
+
 ## Arquivos de configuração local
 appsettings.local.json
 appsettings.*.json
